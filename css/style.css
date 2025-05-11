@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #5b6ee1, #9b4db5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #11111b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input {
+  background-color: #26263a;
+  color: white;
+}
+
+button#registrar {
+  background-color: #b36de0;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+button#registrar:hover {
+  background-color: #9b4db5;
+}
+
+#registros {
+  margin-top: 20px;
+  color: white;
+}
+
+#registros h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.saldos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.registro {
+  padding: 10px;
+  background: #1f1f2e;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  position: relative;
+  border-left: 4px solid;
+}
+
+.registro.receita {
+  border-color: green;
+}
+
+.registro.despesa {
+  border-color: red;
+}
+
+.registro .descricao {
+  font-weight: bold;
+}
+
+.registro .data {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.registro .valor {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.registro button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
